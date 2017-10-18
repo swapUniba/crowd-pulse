@@ -59,7 +59,6 @@ All plugins in the following modules are included (links to repositories):
 * [`swapUniba/crowd-pulse-pos-tag-simple-it`](https://github.com/swapUniba/crowd-pulse-pos-tag-simple-it)
 * [`swapUniba/crowd-pulse-pos-tag-simple-en`](https://github.com/swapUniba/crowd-pulse-pos-tag-simple-en)
 * [`swapUniba/crowd-pulse-rem-stop-word-simple`](https://github.com/swapUniba/crowd-pulse-rem-stop-word-simple)
-* [`swapUniba/crowd-pulse-infogram`](https://github.com/swapUniba/crowd-pulse-infogram)
 * [`swapUniba/crowd-pulse-sentiment-sentiwordnet`](https://github.com/swapUniba/crowd-pulse-sentiment-sentiwordnet)
 * [`swapUniba/crowd-pulse-sentiment-meaningcloud`](https://github.com/swapUniba/crowd-pulse-sentiment-meaningcloud)
 * [`swapUniba/crowd-pulse-jgibblda-estimator`](https://github.com/swapUniba/crowd-pulse-jgibblda-estimator)
