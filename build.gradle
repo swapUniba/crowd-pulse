@@ -1,0 +1,102 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'maven'
+}
+
+sourceCompatibility = 1.8
+
+group = 'com.github.swapUniba'
+version = '0.0.2'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+mainClassName = 'com.github.frapontillo.pulse.crowd.cli.CrowdBlade'
+
+jar {
+    manifest {
+        attributes("Class-Path": ".")
+    }
+    exclude '*'
+}
+
+task execute(type: JavaExec) {
+    main = mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+
+    String argString = System.getProperty("args")
+    if (argString) {
+        args = Arrays.asList(argString.split(" "))
+    }
+}
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+dependencies {
+    compile 'com.github.swapUniba:pulse:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:pulse-email-notify:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-data-java:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-runner:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-social:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-social-facebook:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-social-twitter:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-fix-geo-profile:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-fix-geo-profile-google-maps:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-fix-geo-message:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-fix-geo-message-from-profile:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-detect-language:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-detect-language-optimaize:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-tag:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-tag-babelfy:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-tag-me:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-tag-open-calais:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-tag-wikipedia-miner:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-categorize:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-categorize-wikipedia:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-tokenize:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-tokenize-open-nlp:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-rem-stop-word:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-rem-stop-word-simple:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-pos-tag:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-pos-tag-open-nlp:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-pos-tag-simple:master-SNAPSHOT'
+    //compile 'com.github.frapontillo:crowd-pulse-pos-tag-simple-multi:0.0.1' MAYBE NOT WORKING
+    compile 'com.github.swapUniba:crowd-pulse-pos-tag-simple-it:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-pos-tag-simple-en:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-lemmatize:master-SNAPSHOT'
+    //compile 'com.github.frapontillo:crowd-pulse-lemmatize-multi:0.0.1' MAYBE NOT WORKING
+    compile 'com.github.swapUniba:crowd-pulse-lemmatize-stanford-corenlp:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-lemmatize-morphit:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-sentiment:master-SNAPSHOT'
+    //compile 'com.github.frapontillo:crowd-pulse-sentiment-sentit:0.0.1'  WORKING BAD
+    compile 'com.github.swapUniba:crowd-pulse-sentiment-sentiwordnet:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-sentiment-meaningcloud:master-SNAPSHOT'
+
+    //compile 'com.github.frapontillo:crowd-pulse-infogram:0.0.1'  NOT WORKING
+
+    compile 'com.github.swapUniba:crowd-pulse-index-uniba:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-jgibblda-inferencer:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-jgibblda-estimator:master-SNAPSHOT'
+
+}
