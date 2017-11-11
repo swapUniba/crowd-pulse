@@ -11,6 +11,41 @@ available for use.
 
 ## Install
 
+### Requirements
+#### MongoDB
+Install MongoDB with the following commands:
+
+```shell
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+
+sudo apt-get update
+
+sudo apt-get install -y mongodb-org
+```
+
+#### Java 8
+Install Java 8:
+
+```shell
+sudo add-apt-repository ppa:webupd8team/java -y
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+```
+
+#### Install NodeJS
+NodeJS is necessary to install and use web-service and web-ui:
+
+```shell
+sudo apt-get update -y
+sudo apt-get install -y build-essential
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo apt-get install libkrb5-dev
+```
+
+### Core
+
 Download and build the gradle script file that references all Crowd Pulse plugins. It is recommended to install the package in the /opt folder of a Ubuntu 14.X operating system.
 
 ```shell
@@ -21,6 +56,15 @@ sudo tar -xvzf crowd-pulse.tar.gz -C crowd-pulse --strip-components 1
 sudo rm crowd-pulse.tar.gz
 sudo ./crowd-pulse/gradlew installDist -p crowd-pulse/
 ```
+
+The following permissions are necessary:
+
+```shell
+sudo chown -R $(whoami) /usr/local/bin
+sudo chmod ugo+rwx /opt/crowd-pulse/logs 
+sudo chmod +x crowd-pulse
+```
+
 
 ## Configure
 
