@@ -11,7 +11,7 @@ available for use.
 
 ## Install
 
-Download and build the gradle script file that references all Crowd Pulse plugins.
+Download and build the gradle script file that references all Crowd Pulse plugins. It is recommended to install the package in the /opt folder of a Ubuntu 14.X operating system.
 
 ```shell
 sudo wget https://github.com/swapUniba/crowd-pulse/archive/master.tar.gz -O crowd-pulse.tar.gz
