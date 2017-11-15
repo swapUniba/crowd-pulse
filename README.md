@@ -34,7 +34,7 @@ sudo apt-get install oracle-java8-installer
 ```
 
 #### Install NodeJS
-NodeJS is necessary to install and use web-service and web-ui:
+NodeJS is necessary to install and use [web-service](https://github.com/swapUniba/crowd-pulse-web-service) and [web-ui](https://github.com/swapUniba/crowd-pulse-web-ui):
 
 ```shell
 sudo apt-get update -y
