@@ -63,3 +63,8 @@ All plugins in the following modules are included (links to repositories):
 * [`swapUniba/crowd-pulse-sentiment-meaningcloud`](https://github.com/swapUniba/crowd-pulse-sentiment-meaningcloud)
 * [`swapUniba/crowd-pulse-jgibblda-estimator`](https://github.com/swapUniba/crowd-pulse-jgibblda-estimator)
 * [`swapUniba/crowd-pulse-jgibblda-inferencer`](https://github.com/swapUniba/crowd-pulse-jgibblda-inferencer)
+* [`swapUniba/crowd-pulse-app-categorize`](https://github.com/swapUniba/crowd-pulse-app-categorize)
+* [`swapUniba/crowd-pulse-entity-labeller`](https://github.com/swapUniba/crowd-pulse-entity-labeller)
+* [`swapUniba/crowd-pulse-machine-learning-training`](https://github.com/swapUniba/crowd-pulse-machine-learning-training)
+* [`swapUniba/crowd-pulse-machine-learning-testing`](https://github.com/swapUniba/crowd-pulse-machine-learning-testing)
+

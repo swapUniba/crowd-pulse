@@ -95,6 +95,12 @@ dependencies {
 
     //compile 'com.github.frapontillo:crowd-pulse-infogram:0.0.1'  NOT WORKING
 
+    compile 'com.github.swapUniba:crowd-pulse-entity-labeller:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-machine-learning-training:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-machine-learning-testing:master-SNAPSHOT'
+
+    compile 'com.github.swapUniba:crowd-pulse-app-categorize:master-SNAPSHOT'
+
     compile 'com.github.swapUniba:crowd-pulse-index-uniba:master-SNAPSHOT'
     compile 'com.github.swapUniba:crowd-pulse-jgibblda-inferencer:master-SNAPSHOT'
     compile 'com.github.swapUniba:crowd-pulse-jgibblda-estimator:master-SNAPSHOT'
