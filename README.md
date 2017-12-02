@@ -105,6 +105,7 @@ All plugins in the following modules are included (links to repositories):
 * [`swapUniba/crowd-pulse-rem-stop-word-simple`](https://github.com/swapUniba/crowd-pulse-rem-stop-word-simple)
 * [`swapUniba/crowd-pulse-sentiment-sentiwordnet`](https://github.com/swapUniba/crowd-pulse-sentiment-sentiwordnet)
 * [`swapUniba/crowd-pulse-sentiment-meaningcloud`](https://github.com/swapUniba/crowd-pulse-sentiment-meaningcloud)
+* [`swapUniba/crowd-pulse-sentiment-sentit`](https://github.com/swapUniba/crowd-pulse-sentiment-sentit)
 * [`swapUniba/crowd-pulse-jgibblda-estimator`](https://github.com/swapUniba/crowd-pulse-jgibblda-estimator)
 * [`swapUniba/crowd-pulse-jgibblda-inferencer`](https://github.com/swapUniba/crowd-pulse-jgibblda-inferencer)
 * [`swapUniba/crowd-pulse-app-categorize`](https://github.com/swapUniba/crowd-pulse-app-categorize)

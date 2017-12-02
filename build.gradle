@@ -89,7 +89,7 @@ dependencies {
     compile 'com.github.swapUniba:crowd-pulse-lemmatize-morphit:master-SNAPSHOT'
 
     compile 'com.github.swapUniba:crowd-pulse-sentiment:master-SNAPSHOT'
-    //compile 'com.github.frapontillo:crowd-pulse-sentiment-sentit:0.0.1'  WORKING BAD
+    compile 'com.github.swapUniba:crowd-pulse-sentiment-sentit:master-SNAPSHOT'
     compile 'com.github.swapUniba:crowd-pulse-sentiment-sentiwordnet:master-SNAPSHOT'
     compile 'com.github.swapUniba:crowd-pulse-sentiment-meaningcloud:master-SNAPSHOT'
 
