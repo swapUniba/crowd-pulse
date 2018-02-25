@@ -105,4 +105,8 @@ dependencies {
     compile 'com.github.swapUniba:crowd-pulse-jgibblda-inferencer:master-SNAPSHOT'
     compile 'com.github.swapUniba:crowd-pulse-jgibblda-estimator:master-SNAPSHOT'
 
+    compile 'com.github.swapUniba:crowd-pulse-emotion-detector:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-empathy-profile-detector:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-personality-profile-detector:master-SNAPSHOT'
+
 }

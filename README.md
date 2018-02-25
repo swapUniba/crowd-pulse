@@ -112,4 +112,8 @@ All plugins in the following modules are included (links to repositories):
 * [`swapUniba/crowd-pulse-entity-labeller`](https://github.com/swapUniba/crowd-pulse-entity-labeller)
 * [`swapUniba/crowd-pulse-machine-learning-training`](https://github.com/swapUniba/crowd-pulse-machine-learning-training)
 * [`swapUniba/crowd-pulse-machine-learning-testing`](https://github.com/swapUniba/crowd-pulse-machine-learning-testing)
+* [`swapUniba/crowd-pulse-emotion-detector`](https://github.com/swapUniba/crowd-pulse-emotion-detector)
+* [`swapUniba/crowd-pulse-empathy-profile-detector`](https://github.com/swapUniba/crowd-pulse-empathy-profile-detector)
+* [`swapUniba/crowd-pulse-personality-profile-detector`](https://github.com/swapUniba/crowd-pulse-personality-profile-detector)
+
 
