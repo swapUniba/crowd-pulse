@@ -34,15 +34,16 @@ sudo apt-get install oracle-java8-installer
 ```
 
 #### Install NodeJS
-NodeJS is necessary to install and use [web-service](https://github.com/swapUniba/crowd-pulse-web-service) and [web-ui](https://github.com/swapUniba/crowd-pulse-web-ui):
+NodeJS is necessary to install and use [web-service](https://github.com/swapUniba/crowd-pulse-web-service) and [web-ui-myrror](https://github.com/swapUniba/crowd-pulse-web-ui-user):
 
 ```shell
-sudo apt-get update -y
-sudo apt-get install -y build-essential
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
-sudo apt-get install libkrb5-dev
 ```
+([official guide for details](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions))
+
+The old [web-ui](https://github.com/swapUniba/crowd-pulse-web-ui) needs an older version of NodeJS. Install it in a docker container.
+
 
 ### Core
 
